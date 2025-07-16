@@ -1,4 +1,4 @@
-# Landingpage für Maya Berger
+# Landingpage von Maya Berger
 
 Dies ist das Repository für die Landingpage "Burnout-to-Balance-Blaupause".
 
