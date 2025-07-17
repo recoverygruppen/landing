@@ -5,19 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Die Burnout-to-Balance-Blaupause | Maya Berger</title>
 
-    <!-- SEO Optimierungen -->
     <meta name="description" content="Das wissenschaftlich fundierte Notfall-Protokoll, das Ihnen hilft, aus der Erschöpfungsspirale auszubrechen, Klarheit zu gewinnen und die Kontrolle zurückzuerobern.">
     <meta name="keywords" content="burnout, erschöpfung, coaching, psychologin, maya berger, burnout hilfe frauen, stress, balance, protokoll">
     
-    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     
-    <!-- Google Fonts: Inter -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     
-    <!-- AOS (Animate on Scroll) Library -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <style>
@@ -40,41 +36,39 @@
         .prose {
             max-width: 65ch;
         }
-        .prose h2 {
-            font-size: 1.875rem;
-            line-height: 2.25rem;
-            font-weight: 700;
-            margin-top: 2em;
-            margin-bottom: 1em;
+        .prose p, .prose ul, .prose h2, .prose h3 {
+             margin-bottom: 1.25em;
         }
-        .prose p {
-            font-size: 1.125rem;
-            line-height: 1.75;
-            margin-bottom: 1.25em;
+        .prose h2, .prose h3 {
+            margin-top: 2em;
+        }
+        .prose ul {
+            margin-top: 1.25em;
+        }
+        .faq details > summary {
+            list-style: none;
+        }
+        .faq details > summary::-webkit-details-marker {
+            display: none;
+        }
+        .faq details[open] summary svg {
+            transform: rotate(180deg);
         }
     </style>
 </head>
 <body class="antialiased">
 
-    <!-- HEADER -->
-    <header class="bg-white/80 backdrop-blur-lg sticky top-0 z-50 border-b border-slate-200">
+    <header class="bg-white/80 backdrop-blur-lg border-b border-slate-200">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex items-center justify-between h-16">
-                <div class="flex-shrink-0">
-                    <a href="#" class="text-xl font-bold text-slate-800">Maya Berger | Psychologin</a>
-                </div>
-                <div class="flex items-center">
-                    <!-- ### MOBIL-OPTIMIERTER BUTTON 1 ### -->
-                    <a href="https://form.jotform.com/250701744204346" target="_blank" class="cta-button bg-cyan-600 text-white font-semibold py-2 px-4 text-sm sm:px-5 sm:text-base rounded-lg hover:bg-cyan-700">
-                        Jetzt Platz sichern
-                    </a>
+            <div class="flex items-center justify-center h-16">
+                <div class="flex-shrink-0 text-center">
+                    <a href="#" class="text-lg sm:text-xl font-bold text-slate-800">Maya Berger | Psychologin für Führungskräfte</a>
                 </div>
             </div>
         </div>
     </header>
 
     <main>
-        <!-- HERO SECTION -->
         <section class="hero-gradient py-20 md:py-24">
             <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
                 <p class="text-base font-semibold text-cyan-700 uppercase tracking-wider" data-aos="fade-up">Für ambitionierte Frauen, die alles geben – und kurz davor sind, sich selbst zu verlieren.</p>
@@ -88,48 +82,29 @@
             </div>
         </section>
 
-        <!-- SCRIPT SECTION -->
         <section class="py-20 md:py-24 bg-white">
             <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 prose" data-aos="fade-up">
-                <p>
-                    Es ist 3 Uhr nachts. Der Körper ist bleiern vor Erschöpfung, aber der Kopf... der Kopf schaltet einfach nicht ab.
-                </p>
-                <p>
-                    Die To-do-Liste für morgen rattert endlos. Daneben die quälende Analyse von allem, was Sie heute vermeintlich falsch gemacht haben. Gedanken wie "Ich muss das aushalten" und "Ich kann nicht mehr" kreisen und werden von Herzrasen und einem furchtbaren Druck in der Brust begleitet. Sie wachen morgens genauso erschöpft auf, wie Sie ins Bett gegangen sind.
-                </p>
-                <p>
-                    <strong>Klingt das vertraut?</strong>
-                </p>
-                <p>
-                    Sie sind die Frau, die alles stemmt. Die "Managerin" des gesamten Systems, die den Laden am Laufen hält – im Job und zu Hause. Die, auf die sich alle verlassen. Aber wer ist da, wenn Ihre Akkus nicht nur leer sind, sondern das Ladegerät verschwunden scheint?
-                </p>
-                <p>
-                    Sie haben gelernt, die Sprache der Verharmlosung zu sprechen.
-                </p>
+                <p>Es ist 3 Uhr nachts. Der Körper ist bleiern vor Erschöpfung, aber der Kopf... der Kopf schaltet einfach nicht ab.</p>
+                <p>Die To-do-Liste für morgen rattert endlos. Daneben die quälende Analyse von allem, was Sie heute vermeintlich falsch gemacht haben. Gedanken wie "Ich muss das aushalten" und "Ich kann nicht mehr" kreisen und werden von Herzrasen und einem furchtbaren Druck in der Brust begleitet. Sie wachen morgens genauso erschöpft auf, wie Sie ins Bett gegangen sind.</p>
+                <p><strong>Klingt das vertraut?</strong></p>
+                <p>Sie sind die Frau, die alles stemmt. Die "Managerin" des gesamten Systems, die den Laden am Laufen hält – im Job und zu Hause. Die, auf die sich alle verlassen. Aber wer ist da, wenn Ihre Akkus nicht nur leer sind, sondern das Ladegerät verschwunden scheint?</p>
+                <p>Sie haben gelernt, die Sprache der Verharmlosung zu sprechen.</p>
                 <p class="pl-6 border-l-4 border-cyan-200">
                     <em>"Stressig gerade"</em> heißt in Wahrheit <em>"Ich ertrinke"</em>.
                     <br>
                     <em>"Ich muss das noch schnell fertig machen"</em> ist der Code für <em>"Bin ich etwas wert, wenn das hier nicht klappt?"</em>.
                 </p>
-                <p>
-                    Lassen Sie uns ehrlich sein. Es geht nicht nur um Erschöpfung. Es geht um die tief sitzende Angst, die Sie nachts wach hält:
-                </p>
+                <p>Lassen Sie uns ehrlich sein. Es geht nicht nur um Erschöpfung. Es geht um die tief sitzende Angst, die Sie nachts wach hält:</p>
                 <ul class="list-disc pl-5 space-y-2 text-lg">
                     <li>Die Angst, als <strong>inkompetent oder schwach</strong> entlarvt zu werden, wenn Sie nicht mehr 150 % geben.</li>
                     <li>Die Angst, die <strong>Unabhängigkeit und Kontrolle zu verlieren</strong> und die "Maske der Stärke" fallen lassen zu müssen.</li>
                     <li>Die vernichtende <strong>Scham, um Hilfe zu bitten</strong>, weil Ihnen beigebracht wurde, dass Sie alles allein schaffen müssen.</li>
                     <li>Und die vielleicht größte Angst: <strong>Sich selbst komplett zu verlieren.</strong></li>
                 </ul>
-                <p>
-                    Wenn Sie wütend sind… auf Ihr Umfeld, weil Ihre Grenzen missachtet werden, und auf ein System, das von Frauen wie Ihnen erwartet, alles perfekt zu meistern, ohne sich zu beschweren…
-                </p>
-                <p class="font-bold text-cyan-700 text-xl">
-                    ...dann ist dies die wichtigste Botschaft, die Sie heute lesen werden.
-                </p>
+                <p>Wenn Sie wütend sind… auf Ihr Umfeld, weil Ihre Grenzen missachtet werden, und auf ein System, das von Frauen wie Ihnen erwartet, alles perfekt zu meistern, ohne sich zu beschweren… dann ist dies die wichtigste Botschaft, die Sie heute lesen werden.</p>
             </div>
         </section>
         
-        <!-- TRANSFORMATION SECTION -->
         <section class="py-20 md:py-24 bg-slate-50">
             <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 prose" data-aos="fade-up">
                 <h2>Sie haben wahrscheinlich schon einiges versucht.</h2>
@@ -143,7 +118,6 @@
             </div>
         </section>
 
-        <!-- OFFER SECTION -->
         <section id="angebot" class="py-20 md:py-24 bg-white">
             <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center" data-aos="fade-up">
@@ -159,43 +133,50 @@
                         <li class="flex items-start pt-5 first:pt-0">
                             <div class="flex-shrink-0"><svg class="h-7 w-7 text-green-500" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg></div>
                             <div class="ml-4">
-                                <p class="font-semibold text-slate-800">Exklusive 1:1-Standortbestimmung <span class="text-slate-500 font-normal">(Wert: 500 €)</span></p>
+                                <h4 class="font-semibold text-slate-800">Exklusive 1:1-Standortbestimmung <span class="text-slate-500 font-normal">(Wert: 500 €)</span></h4>
+                                <p class="mt-1 text-slate-600">Wir beginnen nicht mit allgemeinen Ratschlägen. Wir beginnen mit Ihnen. In einer vertraulichen Analyse finden wir heraus, wo Ihre Energie versickert.</p>
                             </div>
                         </li>
                         <li class="flex items-start pt-5">
                             <div class="flex-shrink-0"><svg class="h-7 w-7 text-green-500" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg></div>
                             <div class="ml-4">
-                                <p class="font-semibold text-slate-800">Das S.O.S.-Energiedepot (Sofortzugang) <span class="text-slate-500 font-normal">(Wert: 250 €)</span></p>
+                                <h4 class="font-semibold text-slate-800">Das S.O.S.-Energiedepot (Sofortzugang) <span class="text-slate-500 font-normal">(Wert: 250 €)</span></h4>
+                                <p class="mt-1 text-slate-600">Kurze, geführte Audio-Impulse (5-10 Min.), die Ihr Nervensystem sofort beruhigen und den Kopf freimachen.</p>
                             </div>
                         </li>
                         <li class="flex items-start pt-5">
                             <div class="flex-shrink-0"><svg class="h-7 w-7 text-green-500" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg></div>
                             <div class="ml-4">
-                                <p class="font-semibold text-slate-800">Der digitale "Grenzen-Werkzeugkasten" <span class="text-slate-500 font-normal">(Wert: 450 €)</span></p>
+                                <h4 class="font-semibold text-slate-800">Der digitale "Grenzen-Werkzeugkasten" <span class="text-slate-500 font-normal">(Wert: 450 €)</span></h4>
+                                <p class="mt-1 text-slate-600">Praxiserprobte Formulierungen und Vorlagen, um souverän "Nein" zu sagen – klar, respektvoll und ohne erdrückendes Schuldgefühl.</p>
                             </div>
                         </li>
                         <li class="flex items-start pt-5">
                             <div class="flex-shrink-0"><svg class="h-7 w-7 text-green-500" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg></div>
                             <div class="ml-4">
-                                <p class="font-semibold text-slate-800">Persönliches Impuls-Coaching via Voice-Messaging <span class="text-slate-500 font-normal">(Wert: 1.200 €)</span></p>
+                                <h4 class="font-semibold text-slate-800">Persönliches Impuls-Coaching via Voice-Messaging <span class="text-slate-500 font-normal">(Wert: 1.200 €)</span></h4>
+                                <p class="mt-1 text-slate-600">Wöchentliches, persönliches, psychologisch fundiertes Audio-Coaching von mir. Flexibel, vertraulich und ohne den Druck, live "funktionieren" zu müssen.</p>
                             </div>
                         </li>
                         <li class="flex items-start pt-5">
                             <div class="flex-shrink-0"><svg class="h-7 w-7 text-green-500" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg></div>
                             <div class="ml-4">
-                                <p class="font-semibold text-slate-800">Das Kernsystem: "Kompass zur eigenen Kraft" <span class="text-slate-500 font-normal">(Wert: 800 €)</span></p>
+                                <h4 class="font-semibold text-slate-800">Das Kernsystem: "Kompass zur eigenen Kraft" <span class="text-slate-500 font-normal">(Wert: 800 €)</span></h4>
+                                <p class="mt-1 text-slate-600">Wöchentliche, kurze und prägnante Impulse (max. 15 Min.), die Ihnen helfen, die Muster hinter Ihrer Erschöpfung dauerhaft zu durchbrechen.</p>
                             </div>
                         </li>
                         <li class="flex items-start pt-5">
                             <div class="flex-shrink-0"><svg class="h-7 w-7 text-green-500" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg></div>
                             <div class="ml-4">
-                                <p class="font-semibold text-slate-800">BONUS 1: Report "Die Burnout-Falle für erfolgreiche Frauen" <span class="text-slate-500 font-normal">(Wert: 150 €)</span></p>
+                                <h4 class="font-semibold text-slate-800">BONUS 1: Report "Die Burnout-Falle für erfolgreiche Frauen" <span class="text-slate-500 font-normal">(Wert: 150 €)</span></h4>
+                                <p class="mt-1 text-slate-600">Entlarvt die Mythen, die Sie gefangen halten und zeigt, warum der Schlüssel nicht noch mehr Selbstfürsorge ist.</p>
                             </div>
                         </li>
                          <li class="flex items-start pt-5">
                             <div class="flex-shrink-0"><svg class="h-7 w-7 text-green-500" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg></div>
                             <div class="ml-4">
-                                <p class="font-semibold text-slate-800">SOFORT-BONUS 2: Exklusiv-Zugang zur Masterclass-Aufzeichnung: "Die 3 Denkfehler, die starke Frauen im Burnout gefangen halten" <span class="text-slate-500 font-normal">(Wert: 297 €)</span></p>
+                                <h4 class="font-semibold text-slate-800">SOFORT-BONUS 2: Exklusiv-Zugang zur Masterclass-Aufzeichnung <span class="text-slate-500 font-normal">(Wert: 297 €)</span></h4>
+                                <p class="mt-1 text-slate-600">"Die 3 Denkfehler, die starke Frauen im Burnout gefangen halten". Sehen Sie sich die Aufzeichnung an, wann und wo Sie wollen.</p>
                             </div>
                         </li>
                     </ul>
@@ -207,38 +188,67 @@
             </div>
         </section>
 
-        <!-- PRICING & WHY SECTION -->
-        <section id="bewerbung" class="py-20 md:py-24 bg-slate-800 text-white">
+        <section class="py-20 md:py-24 bg-slate-800 text-white">
             <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8" data-aos="fade-up">
+                <img src="maya-berger.jpg" alt="Portraitfoto von Maya Berger, Psychologin" class="mx-auto h-32 w-32 rounded-full object-cover shadow-lg mb-8 border-4 border-slate-700">
                 <h2 class="text-3xl md:text-4xl font-bold text-center">Ihre Investition heute: <span class="text-cyan-400">Nur 49 €</span></h2>
-                <div class="mt-8 text-lg text-slate-300 space-y-4">
+                <div class="mt-8 text-lg text-slate-300 prose prose-invert max-w-none">
                     <p class="text-center">Das ist kein Tippfehler. Sie erhalten das komplette 3.647-€-Programm für eine einmalige Investition von nur 49 €.</p>
                     <p class="p-4 bg-slate-700 rounded-lg mt-8">Sie fragen sich wahrscheinlich: "Warum bietet eine Psychologin ein so wertvolles Programm für weniger als den Preis eines Abendessens an? Wo ist der Haken?"</p>
                     <p>Ihre Skepsis ist berechtigt. Hier ist meine ehrliche Antwort:</p>
-                    <p>Ich weiß aus Erfahrung, dass der erste Schritt der schwerste ist. Viele Frauen zögern, sofort eine größere Summe in ein Coaching zu investieren, obwohl sie die Hilfe dringend bräuchten.</p>
-                    <p>Deshalb habe ich dieses Einstiegsangebot geschaffen. Ich habe den Preis bewusst so niedrig angesetzt, damit jede ambitionierte Frau, die es ernst meint, die Möglichkeit hat, sofort professionelle und tiefgreifende Hilfe zu erhalten – ohne Risiko und ohne großes finanzielles Commitment.</p>
-                    <p class="font-bold text-white">Meine Überzeugung ist: Wenn Sie den Wert und die Entlastung durch dieses 49-€-Programm erfahren, werden Sie das Vertrauen haben, dass auch meine weiterführenden Programme der richtige Weg für Sie sein könnten. Dies ist der ehrlichste Weg, eine Vertrauensbasis aufzubauen.</p>
+                    <p>Ich weiß aus Erfahrung, dass der erste Schritt der schwerste ist. Viele Frauen zögern, sofort eine größere Summe in ein Coaching zu investieren, obwohl sie die Hilfe dringend bräuchten. Deshalb habe ich dieses Einstiegsangebot geschaffen. Ich habe den Preis bewusst so niedrig angesetzt, damit jede ambitionierte Frau, die es ernst meint, die Möglichkeit hat, sofort professionelle und tiefgreifende Hilfe zu erhalten – ohne Risiko und ohne großes finanzielles Commitment.</p>
+                    <p><strong>Meine Überzeugung ist:</strong> Wenn Sie den Wert und die Entlastung durch dieses 49-€-Programm erfahren, werden Sie das Vertrauen haben, dass auch meine weiterführenden Programme der richtige Weg für Sie sein könnten. Dies ist der ehrlichste Weg, eine Vertrauensbasis aufzubauen.</p>
                 </div>
             </div>
         </section>
         
-        <!-- GUARANTEE SECTION -->
         <section class="py-20 md:py-24 bg-white">
             <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8" data-aos="fade-up">
                 <div class="p-8 md:p-12 border-2 border-amber-400 rounded-xl shadow-2xl bg-amber-50/50">
                     <h2 class="text-3xl font-bold text-slate-800 text-center">Meine "Absolute-Klarheit"-Garantie</h2>
-                    <p class="mt-6 text-lg text-slate-600">Ich verstehe, dass Sie vielleicht schon enttäuscht wurden und skeptisch sind. Deshalb nehme ich das gesamte Risiko von Ihren Schultern – und lege sogar noch etwas drauf.</p>
-                    <p class="mt-4 text-lg font-semibold text-slate-700">Meine Garantie ist bedingungslos und einfach:</p>
-                    <p class="mt-4 text-lg text-slate-600">Nehmen Sie am Programm teil. Buchen Sie unsere 1:1-Standortbestimmung. Wenn Sie am Ende dieses Gesprächs nicht das Gefühl haben, mindestens das 10-fache Ihrer Investition in Form von Klarheit und umsetzbaren ersten Schritten erhalten zu haben, sagen Sie es mir einfach. Ich erstatte Ihnen sofort die vollen 49 € zurück.</p>
-                    <p class="mt-6 text-lg font-bold text-slate-800">Und das ist noch nicht alles.</p>
-                    <p class="mt-2 text-lg text-slate-600">Alle digitalen Komponenten – das S.O.S.-Energiedepot (Wert 250 €), den Report (Wert 150 €) und die Masterclass-Aufzeichnung (Wert 297 €) – dürfen Sie in jedem Fall behalten. Als Geschenk.</p>
+                    <div class="prose prose-lg max-w-none text-slate-600 mt-6">
+                        <p>Ich verstehe, dass Sie vielleicht schon enttäuscht wurden und skeptisch sind. Deshalb nehme ich das gesamte Risiko von Ihren Schultern – und lege sogar noch etwas drauf.</p>
+                        <p><strong>Meine Garantie ist bedingungslos und einfach:</strong></p>
+                        <p>Nehmen Sie am Programm teil. Buchen Sie unsere 1:1-Standortbestimmung. Wenn Sie am Ende dieses Gesprächs nicht das Gefühl haben, mindestens das 10-fache Ihrer Investition in Form von Klarheit und umsetzbaren ersten Schritten erhalten zu haben, sagen Sie es mir einfach. Ich erstatte Ihnen sofort die vollen 49 € zurück.</p>
+                        <p><strong>Und das ist noch nicht alles.</strong></p>
+                        <p>Alle digitalen Komponenten – das S.O.S.-Energiedepot (Wert 250 €), den Report (Wert 150 €) und die Masterclass-Aufzeichnung (Wert 297 €) – dürfen Sie in jedem Fall behalten. Als Geschenk.</p>
+                    </div>
                     <p class="mt-6 text-xl text-center font-bold text-amber-700 bg-amber-100 p-4 rounded-lg">Im schlimmsten Fall erhalten Sie Ihr Geld zurück und behalten als Dankeschön für Ihr Vertrauen digitale Ressourcen im Wert von über 700 €. Das gesamte Risiko liegt zu 100% bei mir. Sie können nicht verlieren.</p>
                 </div>
             </div>
         </section>
 
-        <!-- WHO IS IT FOR SECTION -->
-        <section class="py-20 md:py-24 bg-slate-100">
+        <section class="py-20 md:py-24 bg-slate-50">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center">
+                    <h2 class="text-3xl font-bold text-slate-900">Was Frauen wie Sie sagen...</h2>
+                </div>
+                <div class="mt-12 grid gap-8 md:grid-cols-2">
+                    <div class="p-6 bg-white rounded-lg shadow-sm border-l-4 border-cyan-500" data-aos="fade-up">
+                        <p class="text-slate-700 italic">"Ich dachte immer, ich müsste einfach noch härter arbeiten. Das Protokoll hat mir die Augen geöffnet. Es ging nicht um Härte, sondern um Klarheit. Zum ersten Mal seit Jahren habe ich das Gefühl, wieder am Steuer zu sitzen."</p>
+                        <div class="mt-4 flex items-center">
+                            <img class="h-12 w-12 rounded-full object-cover" src="https://placehold.co/100x100/E0F2FE/334155?text=JK" alt="Julia K.">
+                            <div class="ml-4">
+                                <p class="font-semibold text-slate-900">Julia K.</p>
+                                <p class="text-sm text-slate-600">Unternehmerin</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6 bg-white rounded-lg shadow-sm border-l-4 border-cyan-500" data-aos="fade-up" data-aos-delay="100">
+                        <p class="text-slate-700 italic">"Die 'Nein-Sagen-Skripte' allein waren den Preis wert. Ich habe eine Anfrage abgelehnt, die mich normalerweise wochenlang belastet hätte – und es fühlte sich einfach nur richtig an. Diese Erleichterung ist unbezahlbar."</p>
+                        <div class="mt-4 flex items-center">
+                            <img class="h-12 w-12 rounded-full object-cover" src="https://placehold.co/100x100/E0F2FE/334155?text=AM" alt="Dr. Anna M.">
+                            <div class="ml-4">
+                                <p class="font-semibold text-slate-900">Dr. Anna M.</p>
+                                <p class="text-sm text-slate-600">Teamleiterin Forschung</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-20 md:py-24 bg-white">
              <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8" data-aos="fade-up">
                 <h2 class="text-3xl font-bold text-center text-slate-800">Für wen ist dieses Programm?</h2>
                 <div class="mt-12 grid md:grid-cols-2 gap-8">
@@ -261,23 +271,57 @@
             </div>
         </section>
 
-        <!-- FINAL CTA SECTION -->
+        <section class="py-20 md:py-24 bg-slate-50 faq">
+            <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl font-bold text-center text-slate-900">Ihre Fragen, ehrlich beantwortet</h2>
+                <div class="mt-10 space-y-4">
+                    <div class="bg-white p-5 rounded-lg border border-slate-200" data-aos="fade-up">
+                        <details>
+                            <summary class="font-semibold text-lg cursor-pointer flex justify-between items-center">
+                                <span>Ist das eine Therapie?</span>
+                                <svg class="h-6 w-6 shrink-0 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+                            </summary>
+                            <p class="mt-4 text-slate-600">Nein. Dieses Protokoll ist ein psychoedukatives Selbsthilfe-Programm und ersetzt keine Psychotherapie. Es ist darauf ausgelegt, Ihnen schnell und gezielt strategische Werkzeuge an die Hand zu geben, um aus der akuten Erschöpfung auszubrechen und kann eine wertvolle Überbrückung der Wartezeit sein.</p>
+                        </details>
+                    </div>
+                    <div class="bg-white p-5 rounded-lg border border-slate-200" data-aos="fade-up" data-aos-delay="100">
+                        <details>
+                            <summary class="font-semibold text-lg cursor-pointer flex justify-between items-center">
+                                <span>Ich habe doch schon keine Zeit. Wie aufwändig ist das?</span>
+                                <svg class="h-6 w-6 shrink-0 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+                            </summary>
+                            <p class="mt-4 text-slate-600">Das Protokoll ist speziell für Frauen mit extrem wenig Zeit konzipiert. Es geht nicht darum, Ihnen mehr Arbeit aufzuhalsen, sondern darum, Ihre bestehende Zeit und Energie effektiver zu nutzen. Das Ziel ist es, Ihnen Zeit und Energie *zurückzugeben*, nicht zu nehmen.</p>
+                        </details>
+                    </div>
+                    <div class="bg-white p-5 rounded-lg border border-slate-200" data-aos="fade-up" data-aos-delay="200">
+                        <details>
+                            <summary class="font-semibold text-lg cursor-pointer flex justify-between items-center">
+                                <span>Ist das ein Abonnement?</span>
+                                <svg class="h-6 w-6 shrink-0 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+                            </summary>
+                            <p class="mt-4 text-slate-600">Nein. Dies ist eine einmalige Zahlung von 49 €. Es gibt keine versteckten Kosten oder Abonnements.</p>
+                        </details>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <section class="py-20 md:py-24 bg-slate-800 text-white">
             <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center" data-aos="fade-up">
                 <h3 class="text-3xl font-bold text-white">Ihr nächster Schritt: Sichern Sie sich jetzt Ihren Platz</h3>
-                <p class="mt-4 text-lg text-slate-300">Wichtiger Hinweis: Um eine intensive und persönliche Betreuung zu gewährleisten, ist dieses Sonderangebot für 49 € auf die <span class="text-amber-400 font-bold">nächsten 15 Teilnehmerinnen limitiert</span> und gilt längstens bis zum 31. Juli 2025.</p>
-                <p class="mt-6 text-lg text-slate-200">Wenn Sie spüren, dass es an der Zeit ist, die Kontrolle zurückzugewinnen und die Frau wiederzufinden, die vor lauter Funktionieren verstummt ist, dann ist dies Ihr Moment.</p>
-                <p class="mt-4 text-lg text-slate-200">Klicken Sie jetzt auf den Button, um sich Ihren Zugang zu sichern, bevor alle Plätze vergeben sind.</p>
-                <!-- ### MOBIL-OPTIMIERTER BUTTON 2 ### -->
+                <div class="prose prose-invert max-w-none text-slate-300 mt-4">
+                    <p>Wichtiger Hinweis: Um eine intensive und persönliche Betreuung zu gewährleisten, ist dieses Sonderangebot für 49 € auf die <strong class="text-amber-400 font-bold">nächsten 15 Teilnehmerinnen limitiert</strong> und gilt längstens bis zum 31. Juli 2025.</p>
+                    <p>Wenn Sie spüren, dass es an der Zeit ist, die Kontrolle zurückzugewinnen und die Frau wiederzufinden, die vor lauter Funktionieren verstummt ist, dann ist dies Ihr Moment.</p>
+                    <p>Klicken Sie jetzt auf den Button, um sich Ihren Zugang zu sichern, bevor alle Plätze vergeben sind.</p>
+                </div>
                 <a href="https://form.jotform.com/250701744204346" target="_blank" class="mt-8 inline-block cta-button bg-cyan-500 text-white font-bold py-3 px-4 text-base sm:py-4 sm:px-10 sm:text-xl rounded-lg hover:bg-cyan-600">
                     &gt;&gt; Ja, ich sichere mir jetzt die komplette Blaupause für nur 49 € (statt 3.647 €) &lt;&lt;
                 </a>
-                <p class="mt-4 text-slate-400">Nachdem Sie den Kauf abgeschlossen haben, erhalten Sie sofort Zugang zu den digitalen Boni und ich melde mich persönlich bei Ihnen, um unsere 1:1-Standortbestimmung zu terminieren. Dies ist Ihre einmalige Gelegenheit.</p>
+                <p class="mt-4 text-sm text-slate-400">Nachdem Sie den Kauf abgeschlossen haben, erhalten Sie sofort Zugang zu den digitalen Boni und ich melde mich persönlich bei Ihnen, um unsere 1:1-Standortbestimmung zu terminieren. Dies ist Ihre einmalige Gelegenheit.</p>
             </div>
         </section>
     </main>
 
-    <!-- FOOTER -->
     <footer class="bg-slate-900 text-slate-400">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12 text-center">
             <a href="#" class="text-xl font-bold text-white">Maya Berger</a>
@@ -286,11 +330,14 @@
                 <a href="impressum.html" class="hover:text-white transition">Impressum</a>
                 <a href="datenschutz.html" class="hover:text-white transition">Datenschutz</a>
             </div>
-            <p class="mt-6 text-sm">&copy; 2024 Maya Berger. Alle Rechte vorbehalten.</p>
+            <p class="mt-6 text-sm">&copy; 2025 Maya Berger. Alle Rechte vorbehalten.</p>
         </div>
     </footer>
 
-    <!-- AOS (Animate on Scroll) JS -->
+    <a href="https://form.jotform.com/250701744204346" target="_blank" class="fixed bottom-6 right-6 bg-cyan-600 text-white font-bold py-3 px-5 rounded-lg shadow-lg hover:bg-cyan-700 hover:scale-105 transition-transform duration-300 z-[99]">
+        Platz sichern
+    </a>
+
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init({
