@@ -3,6 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-XXXXXXX');</script>
+    <!-- End Google Tag Manager -->
+
     <title>Die Burnout-to-Balance-Blaupause | Maya Berger</title>
 
     <!-- SEO Optimierungen -->
@@ -29,11 +37,12 @@
         .hero-gradient {
             background: linear-gradient(135deg, #F0F9FF 0%, #E0F2FE 100%);
         }
-        .cta-button {
+        .cta-button, .floating-cta-button {
+            cursor: pointer;
             transition: all 0.3s ease;
             box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
         }
-        .cta-button:hover {
+        .cta-button:hover, .floating-cta-button:hover {
             transform: translateY(-2px);
             box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -2px rgb(0 0 0 / 0.1);
         }
@@ -61,6 +70,10 @@
     </style>
 </head>
 <body class="antialiased">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-XXXXXXX"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
 
     <!-- HEADER (NICHT MEHR STICKY) -->
     <header class="bg-white/80 backdrop-blur-lg border-b border-slate-200">
@@ -313,7 +326,8 @@
                     <p>Wenn Sie spüren, dass es an der Zeit ist, die Kontrolle zurückzugewinnen und die Frau wiederzufinden, die vor lauter Funktionieren verstummt ist, dann ist dies Ihr Moment.</p>
                     <p>Klicken Sie jetzt auf den Button, um sich Ihren Zugang zu sichern, bevor alle Plätze vergeben sind.</p>
                 </div>
-                <a href="https://form.jotform.com/250701744204346" target="_blank" class="mt-8 inline-block cta-button bg-cyan-500 text-white font-bold py-3 px-4 text-base sm:py-4 sm:px-10 sm:text-xl rounded-lg hover:bg-cyan-600">
+                <!-- ### GEÄNDERTER JOTFORM BUTTON ### -->
+                <a onclick="JFL_252005673034044.showForm();return false;" class="mt-8 inline-block cta-button bg-cyan-500 text-white font-bold py-3 px-4 text-base sm:py-4 sm:px-10 sm:text-xl rounded-lg hover:bg-cyan-600">
                     Ja, ich sichere mir jetzt die komplette Blaupause für nur 49 € (statt 584,95 €)
                 </a>
                 <p class="mt-4 text-sm text-slate-400">Nachdem Sie den Kauf abgeschlossen haben, melde ich mich persönlich bei Ihnen, um unsere 1:1-Standortbestimmung zu terminieren und Ihnen die digitalen Boni zur Verfügung zu stellen. Dies ist Ihre einmalige Gelegenheit.</p>
@@ -397,7 +411,8 @@
         </div>
     </footer>
 
-    <a href="https://form.jotform.com/250701744204346" target="_blank" class="fixed bottom-6 right-6 bg-cyan-600 text-white font-bold py-3 px-5 rounded-lg shadow-lg hover:bg-cyan-700 hover:scale-105 transition-transform duration-300 z-[99]">
+    <!-- ### GEÄNDERTER JOTFORM BUTTON ### -->
+    <a onclick="JFL_252005673034044.showForm();return false;" class="fixed bottom-6 right-6 floating-cta-button bg-cyan-600 text-white font-bold py-3 px-5 rounded-lg shadow-lg hover:bg-cyan-700 hover:scale-105 transition-transform duration-300 z-[99]">
         Blueprint sichern
     </a>
 
@@ -407,6 +422,22 @@
             duration: 700,
             once: true,
         });
+    </script>
+    
+    <!-- ### JOTFORM LIGHTBOX SCRIPT ### -->
+    <script src="https://form.jotform.com/static/feedback2.js" type="text/javascript"></script>
+    <script type="text/javascript">
+      var JFL_252005673034044 = new JotformFeedback({
+        formId: '252005673034044',
+        base: 'https://form.jotform.com/',
+        windowTitle: 'Die Burnout-to-Balance-Blaupause',
+        backgroundColor: '#0e7490', /* Ein dunkleres Cyan für den Header des Popups */
+        fontColor: '#ffffff',
+        type: 'lightbox',
+        height: 650,
+        width: 700,
+        openOnLoad: false
+      });
     </script>
 </body>
 </html>
