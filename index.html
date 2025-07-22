@@ -17,9 +17,6 @@
     <meta name="description" content="Der wissenschaftlich fundierte 7-Tage-Fahrplan, der Ihnen hilft, aus der Erschöpfungsspirale auszubrechen, Klarheit zu gewinnen und die Kontrolle zurückzuerobern.">
     <meta name="keywords" content="burnout, erschöpfung, coaching, psychologin, maya berger, burnout hilfe frauen, stress, balance, fahrplan, 7 tage, klinische psychologin">
     
-    <!-- Stripe.js -->
-    <script src="https://js.stripe.com/v3/"></script>
-
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     
@@ -329,8 +326,8 @@
                     <p>Wenn Sie spüren, dass es an der Zeit ist, die Kontrolle zurückzugewinnen und die Frau wiederzufinden, die vor lauter Funktionieren verstummt ist, dann ist dies Ihr Moment.</p>
                     <p>Klicken Sie jetzt auf den Button, um sich Ihren Zugang zu sichern, bevor alle Plätze vergeben sind.</p>
                 </div>
-                <!-- ### STRIPE CHECKOUT BUTTON ### -->
-                <a id="stripe-checkout-button-main" class="mt-8 inline-block cta-button bg-cyan-500 text-white font-bold py-3 px-4 text-base sm:py-4 sm:px-10 sm:text-xl rounded-lg hover:bg-cyan-600">
+                <!-- ### STRIPE PAYMENT LINK BUTTON ### -->
+                <a href="https://buy.stripe.com/6oU00jgRX7IJgk6eDf3Je00" target="_blank" class="mt-8 inline-block cta-button bg-cyan-500 text-white font-bold py-3 px-4 text-base sm:py-4 sm:px-10 sm:text-xl rounded-lg hover:bg-cyan-600">
                     Ja, ich sichere mir jetzt den 7-Tage-Fahrplan für nur 49 € (statt 584,95 €)
                 </a>
                 <p class="mt-4 text-sm text-slate-400">Nachdem Sie den Kauf abgeschlossen haben, melde ich mich persönlich bei Ihnen, um unsere 1:1-Standortbestimmung zu terminieren und Ihnen die digitalen Boni zur Verfügung zu stellen. Dies ist Ihre einmalige Gelegenheit.</p>
@@ -414,8 +411,8 @@
         </div>
     </footer>
 
-    <!-- ### STRIPE CHECKOUT BUTTON ### -->
-    <a id="stripe-checkout-button-floating" class="fixed bottom-6 right-6 floating-cta-button bg-cyan-600 text-white font-bold py-3 px-5 rounded-lg shadow-lg hover:bg-cyan-700 hover:scale-105 transition-transform duration-300 z-[99]">
+    <!-- ### STRIPE PAYMENT LINK BUTTON ### -->
+    <a href="https://buy.stripe.com/6oU00jgRX7IJgk6eDf3Je00" target="_blank" class="fixed bottom-6 right-6 floating-cta-button bg-cyan-600 text-white font-bold py-3 px-5 rounded-lg shadow-lg hover:bg-cyan-700 hover:scale-105 transition-transform duration-300 z-[99]">
         Fahrplan sichern
     </a>
 
@@ -427,40 +424,5 @@
         });
     </script>
     
-    <!-- ### STRIPE CHECKOUT SCRIPT ### -->
-    <script type="text/javascript">
-        // Initialize Stripe with your publishable key
-        const stripe = Stripe('pk_live_51RnKRVHz9LvnsxQIvZJVH0VXjh05rA8BYj8tiXqRkr2KrKhvJx69J44RaskHNIxebagTvwcXnKRtXDuFSrelj7uh00PSQjw0Q2');
-        
-        // Get the checkout buttons
-        const checkoutButtonMain = document.getElementById('stripe-checkout-button-main');
-        const checkoutButtonFloating = document.getElementById('stripe-checkout-button-floating');
-
-        const priceId = 'price_1RnRP8Hz9LvnsxQI4MaN9g2H';
-
-        const handleCheckout = () => {
-            stripe.redirectToCheckout({
-                lineItems: [{ price: priceId, quantity: 1 }],
-                mode: 'payment',
-                // Define success and cancel URLs. Replace with your actual domain.
-                successUrl: 'https://example.com/erfolg',
-                cancelUrl: 'https://example.com/abgebrochen',
-            }).then(function (result) {
-                if (result.error) {
-                    // If `redirectToCheckout` fails due to a browser or network
-                    // error, display the localized error message to your customer.
-                    alert(result.error.message);
-                }
-            });
-        };
-
-        // Add event listeners to both buttons
-        if (checkoutButtonMain) {
-            checkoutButtonMain.addEventListener('click', handleCheckout);
-        }
-        if (checkoutButtonFloating) {
-            checkoutButtonFloating.addEventListener('click', handleCheckout);
-        }
-    </script>
 </body>
 </html>
